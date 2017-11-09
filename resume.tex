@@ -10,9 +10,11 @@
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
-\usepackage{tgpagella}
+\usepackage{tgpagella} % serif font
+\usepackage{cabin} % sans serif font 
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
+\setlength{\parindent}{0em}
 
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
@@ -42,11 +44,42 @@
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
+
 % actual content starts here
 \begin{document}
+{\cabin \LARGE \textbf{Kirk R. Busche}}
 
+\rule{\textwidth}{0.5ex}
+\vspace{-2em}
 \begin{center}
-{\LARGE \textbf{Kirk Busche}}
+	{\cabin\small \textit{kbusche2@illinois.edu $\bullet$ 507-261-4380}}
 \end{center}
 
+\subsection*{\cabin EDUCATION:}
+\headerrow
+	{\textbf{Master of Science in Electrical Engineering}}
+	{\textbf{Expected May 2018}}
+
+University of Illinois Urbana-Champaign
+
+College of Engineering
+
+GPA: 3.92
+
+{\newlength{\mylength}
+\settowidth{\mylength}{Relevant Courseworks:}
+\hangindent=\mylength Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision}
+\\
+\\
+\headerrow
+	{\textbf{Bachelor of Electrical Engineering}}
+	{\textbf{May 2016}}
+
+Minors: Product Design, Math
+
+University of Minnesota-Twin Cities
+
+College of Science and Engineering
+
+Honors: Summa Cum Laude with High Distinction
 \end{document}
