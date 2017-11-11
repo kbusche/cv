@@ -10,6 +10,8 @@
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
+\usepackage[normalem]{ulem}
+\usepackage{verbatim} % for multiline comments
 \usepackage{tgpagella} % serif font
 \usepackage{cabin} % sans serif font 
 \pagestyle{empty}
@@ -44,20 +46,44 @@
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
+\newcommand{\sansserif}{\cabin}
+
 
 % actual content starts here
 \begin{document}
-{\cabin \LARGE \textbf{Kirk R. Busche}}
+{\sansserif \LARGE \textbf{Kirk R. Busche}}
 
 \rule{\textwidth}{0.5ex}
 \vspace{-2em}
 \begin{center}
-	{\cabin\small \textit{kbusche2@illinois.edu $\bullet$ 507-261-4380}}
+	{\sansserif\small \textit{kbusche2@illinois.edu $\bullet$ 507-261-4380}}
 \end{center}
 
-\subsection*{\cabin EDUCATION:}
+%% --- EDUCATION --- %%
+\subsection*{\sansserif EDUCATION:}
+%% Ph.D student %%
 \headerrow
-	{\textbf{Master of Science in Electrical Engineering}}
+	{\textbf{Ph.D. Student in Electrical and Computer Engineering}}
+	{\textbf{August 2016 - Present}}
+
+University of Illinois Urbana-Champaign
+
+College of Engineering
+
+GPA: 3.92
+
+\newlength{\mylength}
+\settowidth{\mylength}{Relevant Courseworks:}
+\hangindent=\mylength
+Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision
+%% TODO fix hangindent issues
+\hangindent=0ex
+\\
+
+%% Masters %%
+\begin{comment}
+\headerrow
+	{\textbf{Master of Science in Electrical and Computer Engineering}}
 	{\textbf{Expected May 2018}}
 
 University of Illinois Urbana-Champaign
@@ -66,14 +92,19 @@ College of Engineering
 
 GPA: 3.92
 
-{\newlength{\mylength}
+\newlength{\mylength}
 \settowidth{\mylength}{Relevant Courseworks:}
-\hangindent=\mylength Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision}
+\hangindent=\mylength
+Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision
+%% TODO fix hangindent issues
+\hangindent=0ex
 \\
-\\
+\end{comment}
+
+%% Bachelors %%
 \headerrow
 	{\textbf{Bachelor of Electrical Engineering}}
-	{\textbf{May 2016}}
+	{\textbf{September 2012 - May 2016}}
 
 Minors: Product Design, Math
 
@@ -82,4 +113,157 @@ University of Minnesota-Twin Cities
 College of Science and Engineering
 
 Honors: Summa Cum Laude with High Distinction
+
+%% --- SKILLS Section --- %%
+\begin{comment}
+\subsection*{\sansserif SKILLS:}
+Python with TensorFlow and Caffe expeirience, MATLAB, C, Microsoft Office Suite, \LaTeX
+\end{comment}
+
+%% --- RESEARCH EXPERIENCE --- %%
+\subsection*{\sansserif RESEARCH EXPERIENCE:}
+
+%% Video segmentation
+\headerrow
+	{\uline{Video Segmentation} \textit{(UIUC)}}
+	{January 2017 - Present}
+	\begin{itemize}
+		\item
+		Worked with Professor Minh Do to develop online, unsupervised video object segmentation algorithm for the DAVIS dataset using clustering of dense optical flow (partnership with Sandia National Laboratories)	
+	\end{itemize}
+
+%% Massive MIMO (undergrad honors thesis)
+\headerrow
+	{\uline{VLSI Design and Evaluation of a Massive MIMO Detection Algorithm} \textit{(UMN)}}
+	{September 2015 - May 2016}
+	\begin{itemize}
+		\item
+		Worked with Professor Gerald Sobelman on surveying and evaluating proposed massive MIMO detection algorithms and implementing one in Verilog for VLSI (project for Honors Thesis) 
+	\end{itemize}
+
+%% --- RESEARCH INTERESTS --- %%
+\subsection*{\sansserif RESEARCH INTERESTS:}
+\begin{itemize}
+	\item Efficient sensor fusion for autonomous vehicles
+	\item Real-time video tracking and segmentation
+	\item Intuitive exploitation of sequential nature of videos for perception tasks
+\end{itemize}
+
+%% --- PRIOR WORK EXPERIENCE --- %%
+\subsection*{\sansserif PRIOR WORK EXPERIENCE}
+
+%% Grad
+%% RA
+\headerrow
+	{\uline{Research Assistant} \textit{(UIUC - advisor: Prof. Minh Do)}}
+	{August 2017 - Present}
+	\begin{itemize}
+		\item Developed online algorithm for unsupervised video object segmentation based on clustering of dense optical flow
+		\item Investigated real-time trackers based on discrimantive correlation filters
+	\end{itemize}
+
+%% SwRI
+\headerrow
+	{\uline{Graduate Student in Critical Systems Department} \textit{(Southwest Research Institute)}}
+	{May 2017 - August 2017}
+	\begin{itemize}
+		\item Trained and tested convolutional neural networks for methane leak detection and segmentation to be implemented on an NVIDIA Tegra embedded platform
+		\item Implemented a parallelized data simulator from MATLAB code in Python to generate training and testing datasets
+		\item Trained several shallow, efficient networks for preliminary investigation for an internal research project
+	\end{itemize}
+
+%% ECE 110 TAing
+\headerrow
+	{\uline{Introduction to Electronics Lab Teaching Assistant} \textit{(UIUC)}}
+	{August 2016 - Present}
+	\begin{itemize}
+		\item Led basic electronics lab sessions weekly and graded lab reports weekly
+	\end{itemize}
+
+%% Undergrad
+%% EE 2001 LA
+\headerrow
+	{\uline{Introduction to Circuits and Electronics Lecture Assistant} \textit{(UMN)}}
+	{January 2016 - May 2016}
+	\begin{itemize}
+		\item Held weekly office hours to help students learn the basics of circuits and electronics and graded exams
+	\end{itemize}
+
+%% EE 2301 LA
+\headerrow
+	{\uline{Introduction to Digital System Design Lecture Assistant} \textit{(UMN)}}
+	{September 2015 - December 2015}
+	\begin{itemize}
+		\item Held weekly office hours to assit students with learning the basics of digital system design and graded homeworks and exams%, including BOolean algebra, Karnaugh maps, Quine-McCluskey method, sequential logic, and other essential digital design techniques
+	\end{itemize}
+
+%% Toro Internship
+\headerrow
+	{\uline{Commercial Electrical Engineering Intern} \textit{(The Toro Company)}}
+	{May 2015 - August 2015}
+	\begin{itemize}
+		\item Investigated warranty claims on field-return control boards to determine possible failure modes and the statistics of the failure rates
+		\item Designed prototype wireless test platforms, including a GPS and Bluetooth-based asset tracker and a wireless joystick control platform
+		\item Investigated the internal components and safety ratings for high-current, three-phase AC motor contorllers for comparison against the various vendor ratings, to provide a final recommendation for use in the fully electric mid-duty Toro Workman
+	\end{itemize}
+
+%% Taylor Center Tutor 
+\headerrow
+	{\uline{Taylor Center Tutor} \textit{(UMN)}}
+	{September 2013 - December 2014}
+	\begin{itemize}	
+		\item Tutored freshmen in Physics I \& II, Calculus I, II, \& III, and Linear Algebra at Frontier Residence Hall
+	\end{itemize}
+
+%% --- ACTIVITIES and LEADERSHIP EXPERIENCES --- %%
+\subsection*{\sansserif{ACTIVITIES AND LEADERSHIP EXPERIENCES:}}
+
+%% HKN - UMN
+{\uline{IEEE - Eta Kappa Nu} \textit{(UMN)}
+
+\headerrow
+	{\quad\textit{President, Omicron Chapter}}
+	{May 2015 - May 2016}
+	\begin{itemize}
+		\item Organized tutoring schedule for members and worked wiht the Electrical and Computer Engineering Department to provide funding for members meeting enough tutoring hours per semester
+		\item Extended invitiations to new members and organized induction ceremony and dineer
+	\end{itemize}
+
+\headerrow
+	{\quad\textit{Member, Omicron Chapter}}
+	{December 2015 - May 2016}
+	\begin{itemize}
+		\item Tutored lower level electrical engineering courses weekly as a part of the IEEE Honors society
+	\end{itemize}
+
+%% Tau Beta Pi - UMN
+{\uline{Tau Beta Pi} \textit{(UMN)}
+
+\headerrow
+	{\quad\textit{Member, Minnesota Alpha Chapter}}
+	{April 2013 - May 2016}
+	\begin{itemize}
+		\item Developed team chartering skills through Engineering Futures sessions and developed other engineering skills as a memer of the oldest engineering honors society in the nation
+	\end{itemize}
+
+%% Marching Band - UMN
+{\uline{Marching Band} \textit{(UMN)}}
+
+\headerrow
+	{\quad\textit{Leader, University of Minnesota Marching Band}}
+	{May 2014 - December 2015}
+	\begin{itemize}
+		\item Taught marching fundamentals and expectations to the 2014 and 2015 rookie clases and led weekly small group sectionals
+	\end{itemize}
+
+\headerrow
+	{\quad\textit{Member, University of Minnesota Marching Band}}
+	{August 2012 - December 2015}
+	\begin{itemize}
+		\item Rehearsed for 500+ hours each fall semester to build strong discipline, personal motivation, teamwork, self-awareness, and musicianship to foster a strong sense of Gopher Pride at the University of Minnesota
+	\end{itemize}
+
+%% Pep Band - UMN
+
+
 \end{document}
