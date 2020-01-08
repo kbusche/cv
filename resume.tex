@@ -61,6 +61,8 @@
 
 %% --- EDUCATION --- %%
 \subsection*{\sansserif EDUCATION:}
+
+\begin{comment}
 %% Ph.D student %%
 \headerrow
 	{\textbf{Ph.D. Student in Electrical and Computer Engineering}}
@@ -73,7 +75,7 @@ College of Engineering
 GPA: 3.94
 
 \newlength{\mylength}
-\settowidth{\mylength}{Relevant Courseworks:}
+\settowidth{\mylength}{Relevant Coursework:}
 \hangindent=\mylength
 Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector
 Space Signal Processing, Topics in Image Processing, Random Processes,
@@ -81,12 +83,12 @@ Optimization for Computer Vision, Digital Imaging
 %% TODO fix hangindent issues
 \hangindent=0ex
 \\
+\end{comment}
 
 %% Masters %%
-\begin{comment}
 \headerrow
 	{\textbf{Master of Science in Electrical and Computer Engineering}}
-	{\textbf{Expected May 2018}}
+	{\textbf{August 2016 - December 2019}}
 
 University of Illinois Urbana-Champaign
 
@@ -95,13 +97,15 @@ College of Engineering
 GPA: 3.94
 
 \newlength{\mylength}
-\settowidth{\mylength}{Relevant Courseworks:}
+\settowidth{\mylength}{Relevant Coursework:}
 \hangindent=\mylength
+{Thesis: \textit{Frequency-Modulated Continuous-Wave Radar Processing
+	Fundamentals}}
+
 Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision, Digital Imaging
 %% TODO fix hangindent issues
 \hangindent=0ex
 \\
-\end{comment}
 
 %% Bachelors %%
 \headerrow
@@ -117,28 +121,19 @@ College of Science and Engineering
 Honors: Summa Cum Laude with High Distinction
 
 %% --- SKILLS Section --- %%
-\begin{comment}
 \subsection*{\sansserif SKILLS:}
-Python with TensorFlow experience, OpenCV, MATLAB, ROS, 
+Python with TensorFlow and Keras experience, OpenCV, MATLAB, ROS, 
 	Microsoft Office Suite, \LaTeX, Linux/Ubuntu, git, svn
-\end{comment}
 
 %% --- RESEARCH INTERESTS --- %%
+\begin{comment}
 \subsection*{\sansserif RESEARCH INTERESTS:}
 \begin{itemize}
 	\item Efficient sensor fusion, particularly for autonomous vehicles
 	\item Real-time video tracking and segmentation
 	\item Intuitive exploitation of sequential nature of videos for perception tasks
 \end{itemize}
-
-
-%% --- AWARDS / FELLOWSHIPS --- %%
-\subsection*{\sansserif AWARDS}
-
-%% Qualcomm Innovation Fellowship
-\begin{itemize}
-	\item Qualcomm Innovation Fellowship 2018 Finalist
-\end{itemize}
+\end{comment}
 
 
 %% --- RESEARCH EXPERIENCE --- %%
@@ -147,16 +142,32 @@ Python with TensorFlow experience, OpenCV, MATLAB, ROS,
 %% Radar-video fusion
 \headerrow
     {\uline{RADAR-Video Fusion} \textit{(UIUC)}}
-    {November 2017 - Present}
+    {November 2017 - December 2019}
     \begin{itemize}
         \item
         Working with Professor Minh Do to develop fusion algorithms to generate high resolution depth maps from RADAR, video, and egomotion data for autonomous vehicle applications
+	\item 
+		Investigated Frequency-Modulated Continuous-Wave (FMCW) radar
+		    chirp parameters using Texas Instruments mmWave platform for
+		    raw ADC data collection 
     \end{itemize}
+
+\headerrow
+	{\uline{Small Target Detection and Background Estimation} \textit{(UIUC,
+	Sandia National Laboratories)}}
+	{October 2018 - December 2019}
+	\begin{itemize}
+		\item
+			Worked with Professor Minh Do and collaborators at
+			Sandia National Laboratories to investigate unsupervised
+			background estimation methods for video sequences with
+			small, low-resolution targets (e.g. satellite video)
+	\end{itemize}
 
 %% Video segmentation
 \headerrow
 	{\uline{Video Segmentation} \textit{(UIUC)}}
-	{January 2017 - Present}
+	{January 2017 - September 2017}
 	\begin{itemize}
 		\item
 		Working with Professor Minh Do to develop online, unsupervised video object segmentation algorithm for the DAVIS dataset using clustering of dense optical flow (partnership with Sandia National Laboratories)	
@@ -179,8 +190,7 @@ Python with TensorFlow experience, OpenCV, MATLAB, ROS,
 %% RA
 \headerrow
 	{\uline{Research Assistant} \textit{(UIUC)}}
-	{August 2017 - Present}
-	\begin{comment}
+	{August 2017 - December 2019}
 	\begin{itemize}
 		\item Developed online algorithm for unsupervised video object segmentation based on clustering of dense optical flow
 		\item Investigated real-time trackers based on discriminative correlation filters
@@ -188,32 +198,29 @@ Python with TensorFlow experience, OpenCV, MATLAB, ROS,
 resolution depth maps using electronically scanning RADAR (ESR) sensors found on
 modern cars paired with video
 	\end{itemize}
-	\end{comment}
 	\newline %comment out if including itemize info
 	
 %% SNL
 \headerrow
 	{\uline{Graduate Student Intern} \textit{(Sandia National Laboratories)}}
-	{September 2018 - Present}
-	\begin{comment}
+	{September 2018 - December 2019}
 		\begin{itemize}
 			\item Member of the Sensor Specific Processing team
 				working on the transient detection pipeline
 			\item Developed transient event data simulator with
 				ground truth for multiple profiles
 			\item Developed preliminary pipeline precision-recall
-				testing with synthesized data
+				testing with synthesized data for cloud-based
+				detection pipeline
 			\item Investigated unsupervised background estimation
 				for small, moving targets
 		\end{itemize}
-	\end{comment}
 	\newline
 
 %% SwRI
 \headerrow
 	{\uline{Graduate Student in Critical Systems Department} \textit{(Southwest Research Institute)}}
 	{May 2017 - August 2018}
-	\begin{comment}
 	\begin{itemize}%[leftmargin=*]
 		\item[] Summer 2017
 			\begin{itemize}
@@ -227,22 +234,18 @@ modern cars paired with video
 				\item Developed algorithms for predicting anomalous events in high dimensional, multi-sensor time series data 
 			\end{itemize}
 	\end{itemize}
-	\end{comment}
 	\newline
 
 %% ECE 110 TAing
 \headerrow
 	{\uline{Introduction to Electronics Lab Teaching Assistant} \textit{(UIUC)}}
 	{August 2016 - December 2017}
-	\begin{comment}
 	\begin{itemize}
 		\item Led basic electronics lab sessions weekly and graded lab reports weekly
 	\end{itemize}
-	\end{comment}
 	%\newline %comment out if including itemize info
 
 %% Undergrad
-	\begin{comment}
 %% EE 2001 LA
 \headerrow
 	{\uline{Introduction to Circuits and Electronics Lecture Assistant} \textit{(UMN)}}
@@ -278,10 +281,17 @@ modern cars paired with video
 		\item Tutored freshmen in Physics I \& II, Calculus I, II, \& III, and Linear Algebra at Frontier Residence Hall
 	\end{itemize}
 
-\end{comment}
+
+%% --- AWARDS / FELLOWSHIPS --- %%
+\subsection*{\sansserif AWARDS}
+
+%% Qualcomm Innovation Fellowship
+\begin{itemize}
+	\item Qualcomm Innovation Fellowship 2018 Finalist
+\end{itemize}
+
 
 %% --- ACTIVITIES and LEADERSHIP EXPERIENCES --- %%
-\begin{comment}
 \subsection*{\sansserif{ACTIVITIES AND LEADERSHIP EXPERIENCES:}}
 
 %% HKN - UMN
@@ -363,7 +373,6 @@ modern cars paired with video
 		\item Worked with the Director of Event Development to organize and coordinate the 2014 Relay for Life event at the University of Minnesota
 	\end{itemize}
 
-\end{comment}
 
 %% --- HONORS & AWARDS --- %%
 \begin{comment}
