@@ -90,9 +90,9 @@ Optimization for Computer Vision, Digital Imaging
 	{\textbf{Master of Science in Electrical and Computer Engineering}}
 	{\textbf{August 2016 - December 2019}}
 
-University of Illinois Urbana-Champaign
-
-College of Engineering
+\headerrow
+	{University of Illinois Urbana-Champaign}
+	{College of Engineering}
 
 GPA: 3.94
 
@@ -102,7 +102,11 @@ GPA: 3.94
 {Thesis: \textit{Frequency-Modulated Continuous-Wave Radar Processing
 	Fundamentals}}
 
-Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector Space Signal Processing, Topics in Image Processing, Random Processes, Optimization for Computer Vision, Digital Imaging
+{Adviser: Professor Minh Do}
+
+{Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector
+Space Signal Processing, Topics in Image Processing, Random Processes,
+Optimization for Computer Vision, Digital Imaging}
 %% TODO fix hangindent issues
 \hangindent=0ex
 \\
@@ -112,11 +116,11 @@ Relevant Coursework: Pattern Recognition, Digital Signal Processing II, Vector S
 	{\textbf{Bachelor of Electrical Engineering}}
 	{\textbf{September 2012 - May 2016}}
 
-Minors: Product Design, Math
+%Minors: Product Design, Math
 
-University of Minnesota-Twin Cities
-
-College of Science and Engineering
+\headerrow
+	{University of Minnesota-Twin Cities}
+	{College of Science and Engineering}
 
 Honors: Summa Cum Laude with High Distinction
 
@@ -141,11 +145,14 @@ Python with TensorFlow and Keras experience, OpenCV, MATLAB, ROS,
 
 %% Radar-video fusion
 \headerrow
-    {\uline{RADAR-Video Fusion} \textit{(UIUC)}}
+    {\uline{Frequency-Modulated Continuous-Wave Radar} \textit{(UIUC)}}
     {November 2017 - December 2019}
     \begin{itemize}
+	\begin{comment}
         \item
-        Working with Professor Minh Do to develop fusion algorithms to generate high resolution depth maps from RADAR, video, and egomotion data for autonomous vehicle applications
+        Worked with Professor Minh Do to develop fusion algorithms to generate
+		high resolution depth maps from radar, video, and egomotion data for autonomous vehicle applications
+	\end{comment}
 	\item 
 		Investigated Frequency-Modulated Continuous-Wave (FMCW) radar
 		    chirp parameters using Texas Instruments mmWave platform for
@@ -153,8 +160,7 @@ Python with TensorFlow and Keras experience, OpenCV, MATLAB, ROS,
     \end{itemize}
 
 \headerrow
-	{\uline{Small Target Detection and Background Estimation} \textit{(UIUC,
-	Sandia National Laboratories)}}
+	{\uline{Small Target Detection and Background Estimation} \textit{(UIUC)}}
 	{October 2018 - December 2019}
 	\begin{itemize}
 		\item
@@ -170,10 +176,11 @@ Python with TensorFlow and Keras experience, OpenCV, MATLAB, ROS,
 	{January 2017 - September 2017}
 	\begin{itemize}
 		\item
-		Working with Professor Minh Do to develop online, unsupervised video object segmentation algorithm for the DAVIS dataset using clustering of dense optical flow (partnership with Sandia National Laboratories)	
+		Worked with Professor Minh Do to develop online, unsupervised video object segmentation algorithm for the DAVIS dataset using clustering of dense optical flow (partnership with Sandia National Laboratories)	
 	\end{itemize}
 
 %% Massive MIMO (undergrad honors thesis)
+	\begin{comment}
 \headerrow
 	{\uline{VLSI Design and Evaluation of a Massive MIMO Detection Algorithm} \textit{(UMN)}}
 	{September 2015 - May 2016}
@@ -181,39 +188,32 @@ Python with TensorFlow and Keras experience, OpenCV, MATLAB, ROS,
 		\item
 		Worked with Professor Gerald Sobelman on surveying and evaluating proposed massive MIMO detection algorithms and implementing one in Verilog for VLSI (project for Honors Thesis) 
 	\end{itemize}
+	\end{comment}
 
 
 %% --- PRIOR WORK EXPERIENCE --- %%
 \subsection*{\sansserif PRIOR WORK EXPERIENCE}
 
 %% Grad
-%% RA
-\headerrow
-	{\uline{Research Assistant} \textit{(UIUC)}}
-	{August 2017 - December 2019}
-	\begin{itemize}
-		\item Developed online algorithm for unsupervised video object segmentation based on clustering of dense optical flow
-		\item Investigated real-time trackers based on discriminative correlation filters
-        \item Developed RADAR-video fusion algorithms to generate high
-resolution depth maps using electronically scanning RADAR (ESR) sensors found on
-modern cars paired with video
-	\end{itemize}
-	%\newline %comment out if including itemize info
-	
 %% SNL
 \headerrow
 	{\uline{Graduate Student Intern} \textit{(Sandia National Laboratories)}}
 	{September 2018 - December 2019}
 		\begin{itemize}
+			\begin{comment}
 			\item Member of the Sensor Specific Processing team
 				working on the transient detection pipeline
 			\item Developed transient event data simulator with
 				ground truth for multiple profiles
-			\item Developed preliminary pipeline precision-recall
+			\item Developed preliminary precision-recall
 				testing with synthesized data for cloud-based
 				detection pipeline
 			\item Investigated unsupervised background estimation
-				for small, moving targets
+				for small moving targets
+			\end{comment}
+			\item Developed preliminary precision-recall using
+				synthesized transient event data for a
+				cloud-based detection pipeline
 		\end{itemize}
 	%\newline
 
@@ -221,11 +221,22 @@ modern cars paired with video
 \headerrow
 	{\uline{Graduate Student in Critical Systems Department} \textit{(Southwest Research Institute)}}
 	{May 2017 - August 2018}
+	\begin{itemize}
+		\item Trained and tested convolutional neural networks for
+			methane leak detection and segmentation to be
+			implemented on an embedded platform and
+			investigated the use of computer vision features for flow rate
+			quantification
+		\item Implemented a parallelized data simulator from MATLAB code in Python to generate datasets
+		\item Developed algorithms for predicting anomalous events in high dimensional, multi-sensor time series data 
+	\end{itemize}
+	\begin{comment}
 	\begin{itemize}%[leftmargin=*]
 		\item[] Summer 2017
 			\begin{itemize}
 				\item Trained and tested convolutional neural networks for methane leak detection and segmentation to be implemented on an NVIDIA Tegra embedded platform
-				\item Implemented a parallelized data simulator from MATLAB code in Python to generate training and testing datasets
+				\item Implemented a parallelized data simulator
+					from MATLAB code in Python to generate datasets
 				\item Trained several shallow, efficient networks for preliminary investigation for an internal research project
 			\end{itemize}
 		\item[] Summer 2018
@@ -234,52 +245,85 @@ modern cars paired with video
 				\item Developed algorithms for predicting anomalous events in high dimensional, multi-sensor time series data 
 			\end{itemize}
 	\end{itemize}
+	\end{comment}
 	%\newline
 
+%% RA
+\headerrow
+	{\uline{Research Assistant} \textit{(UIUC)}}
+	{August 2017 - December 2019}
+	\begin{comment}
+	\begin{itemize}
+		\item Developed online algorithm for unsupervised video object segmentation based on clustering of dense optical flow
+		\item Investigated real-time trackers based on discriminative correlation filters
+        \item Developed RADAR-video fusion algorithms to generate high
+resolution depth maps using electronically scanning RADAR (ESR) sensors found on
+modern cars paired with video
+	\end{itemize}
+	\end{comment}
+	\newline %comment out if including itemize info
+	
 %% ECE 110 TAing
 \headerrow
 	{\uline{Introduction to Electronics Lab Teaching Assistant} \textit{(UIUC)}}
 	{August 2016 - December 2017}
+	\begin{comment}
 	\begin{itemize}
 		\item Led basic electronics lab sessions weekly and graded lab reports weekly
 	\end{itemize}
+	\end{comment}
 	%\newline %comment out if including itemize info
 
 %% Undergrad
+	\begin{comment}
 %% EE 2001 LA
 \headerrow
 	{\uline{Introduction to Circuits and Electronics Lecture Assistant} \textit{(UMN)}}
 	{January 2016 - May 2016}
+	%\begin{comment}
 	\begin{itemize}
 		\item Held weekly office hours to help students learn the basics of circuits and electronics and graded exams
 	\end{itemize}
+	\end{comment}
+	%\newline
 
 
 %% EE 2301 LA
+		\begin{comment}
 \headerrow
 	{\uline{Introduction to Digital System Design Lecture Assistant} \textit{(UMN)}}
 	{September 2015 - December 2015}
+	%\begin{comment}
 	\begin{itemize}
 		\item Held weekly office hours to assit students with learning the basics of digital system design and graded homeworks and exams%, including BOolean algebra, Karnaugh maps, Quine-McCluskey method, sequential logic, and other essential digital design techniques
 	\end{itemize}
+	\end{comment}
+	%\newline
 
 %% Toro Internship
+		\begin{comment}
 \headerrow
 	{\uline{Commercial Electrical Engineering Intern} \textit{(The Toro Company)}}
 	{May 2015 - August 2015}
+	%\begin{comment}
 	\begin{itemize}
 		\item Investigated warranty claims on field-return control boards to determine possible failure modes and the statistics of the failure rates
 		\item Designed prototype wireless test platforms, including a GPS and Bluetooth-based asset tracker and a wireless joystick control platform
 		\item Investigated the internal components and safety ratings for high-current, three-phase AC motor contorllers for comparison against the various vendor ratings, to provide a final recommendation for use in the fully electric mid-duty Toro Workman
 	\end{itemize}
+	\end{comment}
+	%\newline
 
 %% Taylor Center Tutor 
+	\begin{comment}
 \headerrow
 	{\uline{Taylor Center Tutor} \textit{(UMN)}}
 	{September 2013 - December 2014}
 	\begin{itemize}	
 		\item Tutored freshmen in Physics I \& II, Calculus I, II, \& III, and Linear Algebra at Frontier Residence Hall
 	\end{itemize}
+	\end{comment}
+	
 
 
 %% --- AWARDS / FELLOWSHIPS --- %%
@@ -292,6 +336,7 @@ modern cars paired with video
 
 
 %% --- ACTIVITIES and LEADERSHIP EXPERIENCES --- %%
+\begin{comment}
 \subsection*{\sansserif{ACTIVITIES AND LEADERSHIP EXPERIENCES:}}
 
 %% HKN - UMN
@@ -301,8 +346,8 @@ modern cars paired with video
 	{\quad\textit{President, Omicron Chapter}}
 	{May 2015 - May 2016}
 	\begin{itemize}
-		\item Organized tutoring schedule for members and worked wiht the Electrical and Computer Engineering Department to provide funding for members meeting enough tutoring hours per semester
-		\item Extended invitiations to new members and organized induction ceremony and dineer
+		\item Organized tutoring schedule for members and worked with the Electrical and Computer Engineering Department to provide funding for members meeting enough tutoring hours per semester
+		\item Extended invitations to new members and organized induction ceremony and dinner
 	\end{itemize}
 
 \headerrow
@@ -319,7 +364,9 @@ modern cars paired with video
 	{\quad\textit{Member, Minnesota Alpha Chapter}}
 	{April 2013 - May 2016}
 	\begin{itemize}
-		\item Developed team chartering skills through Engineering Futures sessions and developed other engineering skills as a memer of the oldest engineering honors society in the nation
+		\item Developed team chartering skills through Engineering
+			Futures sessions and developed other engineering skills
+			as a member of the oldest engineering honors society in the nation
 	\end{itemize}
 
 %% Marching Band - UMN
@@ -329,7 +376,8 @@ modern cars paired with video
 	{\quad\textit{Leader, University of Minnesota Marching Band}}
 	{May 2014 - December 2015}
 	\begin{itemize}
-		\item Taught marching fundamentals and expectations to the 2014 and 2015 rookie clases and led weekly small group sectionals
+		\item Taught marching fundamentals and expectations to the 2014
+			and 2015 rookie classes and led weekly small group sectionals
 	\end{itemize}
 
 \headerrow
@@ -353,7 +401,7 @@ modern cars paired with video
 	{\quad\textit{Member, University of Minnesota Gopher Pep Band}}
 	{September 2012 - May 2013}
 	\begin{itemize}
-		\item Perfored at women's hocky, women's basketball, and women's volleyball sporting events, including the women's hockey NCAA and WCHA championships
+		\item Performed at women's hockey, women's basketball, and women's volleyball sporting events, including the women's hockey NCAA and WCHA championships
 	\end{itemize}
 
 %% Colleges Against Cancer - UMN
@@ -363,7 +411,7 @@ modern cars paired with video
 	{\quad\textit{Director of Event Development}}
 	{May 2014 - May 2016}
 	\begin{itemize}
-		\item Orgainzed the 2015 and 2016 Relay for Life fundraisers at the University of Minnesota, with each having over 1,000 participants attending
+		\item Organized the 2015 and 2016 Relay for Life fundraisers at the University of Minnesota, with each having over 1,000 participants attending
 	\end{itemize}
 
 \headerrow
@@ -373,6 +421,7 @@ modern cars paired with video
 		\item Worked with the Director of Event Development to organize and coordinate the 2014 Relay for Life event at the University of Minnesota
 	\end{itemize}
 
+\end{comment}
 
 %% --- HONORS & AWARDS --- %%
 \begin{comment}
